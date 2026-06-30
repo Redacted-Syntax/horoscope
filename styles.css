@@ -1,0 +1,119 @@
+/* ===== FONT IMPORT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* THEME PALETTE - "make a contract" */
+:root {
+    --soul-pink: #ff7eb9;
+    /* Madoka's soul gem */
+    --madoka-pink: #ffb3d1;
+    --cream: #fff5f8;
+    --kyubey-white: #fdfdff;
+    /* his fur */
+    --kyubey-gold: #f5c542;
+    /* his rings + ears */
+    --kyubey-red: #e63950;
+    /* those eyes */
+    --grief-purple: #2a1f3d;
+    /* the witch's labyrinth */
+    --soft-text: #4a3f5c;
+}
+
+/* ===== PAGE ===== */
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 11pt;
+    color: var(--soft-text);
+    background-color: var(--grief-purple);
+    min-height: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5rem;
+}
+
+/* ===== INPUT CARD ===== */
+#input-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+#zodiac-form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.75rem;
+    width: 20rem;
+    padding: 1.5rem;
+    background-color: var(--cream);
+    border: 2px solid var(--madoka-pink);
+    border-radius: 0.75rem;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 18pt;
+    color: var(--grief-purple);
+}
+
+label {
+    font-weight: 600;
+}
+
+select {
+    font-family: Poppins, sans-serif;
+    font-size: 11pt;
+    padding: 0.5em;
+    color: var(--soft-text);
+    background-color: var(--kyubey-white);
+    border: 1px solid var(--madoka-pink);
+    border-radius: 0.5rem;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+button {
+    font-family: Poppins, sans-serif;
+    font-size: 11pt;
+    font-weight: 600;
+    color: var(--kyubey-white);
+    background-color: var(--soul-pink);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.625em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--kyubey-red);
+}
+
+/* ===== RESULTS CARD ===== */
+#results-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 0.5rem;
+    width: 22.5rem;
+    padding: 1.5rem;
+    background-color: var(--kyubey-white);
+    border: 3px solid var(--kyubey-gold);
+    border-radius: 1rem;
+}
+
+#results-container img {
+    width: 6rem;
+    height: 6rem;
+}
+
+/* ===== HIDE HELPER ===== */
+.hide {
+    display: none;
+}
